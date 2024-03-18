@@ -3,13 +3,14 @@
 Player = Object.extend(Object)
 
 States = {"IDLE", "RUN", "HEAL"}
+SPEED = 1
 
-function Player.new(x, y, width, height, speed, sprite)
+function Player.new(x, y, width, height, sprite)
     self.x = x
     self.y = y
     self.width = width
     self.height = height
-    self.speed = speed
+    self.speed = SPEED
     self.sprite = sprite
     self.state = States.IDLE
 end
